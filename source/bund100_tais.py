@@ -27,8 +27,10 @@ count = 0
 for x in bpy.data.objects:
     data_.append(x)
 
+#一連の流れが終わったら移動
 for y in range(10):
     for x in range(10):
+        #テクスチャ名が同じマテリアル同士を統合
         for m in data_[count].material_slots:
             insert_flag = 1
             for m2 in mat_:

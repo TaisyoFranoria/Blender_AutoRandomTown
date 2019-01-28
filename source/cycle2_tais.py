@@ -37,10 +37,12 @@ def refresh_mat():
 def refresh_tex():
     for x in bpy.data.textures:
         bpy.data.textures.remove(x)
+    #シーン内のテクスチャをリフレッシュ
 
 def refresh_mesh():
     for x in bpy.data.meshes:
         bpy.data.meshes.remove(x)
+    #シーン内のメッシュをリフレッシュ
 
 def refresh():
     refresh_obj()
