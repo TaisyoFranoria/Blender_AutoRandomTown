@@ -38,10 +38,15 @@ def refresh_tex():
     for x in bpy.data.textures:
         bpy.data.textures.remove(x)
 
+def refresh_mesh():
+    for x in bpy.data.meshes:
+        bpy.data.meshes.remove(x)
+
 def refresh():
     refresh_obj()
     refresh_mat()
     refresh_tex()
+    refresh_mesh()
     #全部リフレッシュ
 
 def rename():

@@ -1,0 +1,60 @@
+...     for y in a.data.uv_layers:
+...         print(y.name)
+...         
+Traceback (most recent call last):
+  File "<blender_console>", line 2, in <module>
+AttributeError: 'list' object has no attribute 'data'
+
+>>> for x in a:
+...     for y in x.data.uv_layers:
+...         print(y.name)
+...         
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+
+Traceback (most recent call last):
+  File "<blender_console>", line 2, in <module>
+AttributeError: 'Armature' object has no attribute 'uv_layers'
+
+>>> for x in a:
+...     if(a.type == 'MESH'):
+...         for y in x.data.uv_layers:
+...             print(y.name)
+...             
+Traceback (most recent call last):
+  File "<blender_console>", line 2, in <module>
+AttributeError: 'list' object has no attribute 'type'
+
+>>> for x in a:
+...     if(x.type == 'MESH'):
+...         for y in x.data.uv_layers:
+...             print(y.name)
+...             
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+DiffuseUV
+
+>>> 
